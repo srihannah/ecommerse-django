@@ -1,0 +1,19 @@
+{% extends 'shop/layout/main.html' %}
+{% block title %}
+Order Success | Shopcart
+{% endblock title %}
+{% block content %}
+
+<section class="bg-light py-4 my-5" style="min-height: 600px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="mb-3">Thank You!</h4>
+                <p>Your order has been placed successfully. We will process it soon.</p>
+                <a href="{% url 'home' %}" class="btn btn-primary">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
